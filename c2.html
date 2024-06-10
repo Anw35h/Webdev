@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function greet(name) {
+            console.log(`hello, ${name}!`);//printing 
+            }
+            greet("ladu");
+
+            function add(a,b){
+                return a + b;
+                console.log(a + b);//for adding
+            }
+            console.log(add(6,7));
+            //arrays
+            const fruits=["apple","banana","orange"];
+            fruits.push("grapes");
+            fruits.push("mango");
+            fruits.pop();//it will delete last element of an array
+            console.log(fruits);
+            console.log(fruits[1]);
+            console.log(fruits.slice(0,2));
+            console.log("original array",fruits);
+            const shifted=fruits.shift();
+            console.log(shifted);
+            console.log(fruits);
+            fruits.unshift("apple","grapes");
+            console.log("fruits");
+            const arr1=["apple","orange"];
+            const arr2=["banana"];
+            const combined=arr1.concat(arr2);//adding two arrays
+            console.log(combined);
+            //const numbers = [1,2,3,4,5];
+            //console.log("original array:",numbers);
+            //const num = numbers.splice(2,4);//shows the elements in the array as per index size
+            //console.log(num);
+            //const numbers = [1,2,3];
+            //numbers.forEach(function(num){
+              //  console.log("ele: ",num);
+            //});
+            const numbers = [1,2,3,4,5];
+            const evenNumbers = numbers.filter(function(num){
+                return num % 2 ===0;//for even numbers
+            });
+            console.log(evenNumbers);
+            //stringss
+            const strings= "hello,world!";
+            console.log(str.substring(world));//sub strings
+            const str = "rat,cat,dog";
+            const animals = str.split(",");
+            console.log(animals);
+
+    </script>
+</body>
+</html>
